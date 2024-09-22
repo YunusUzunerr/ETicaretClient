@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "71301bf0-be2c-4671-898f-a691c9384c19"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,9 +34,27 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/alertifyjs/build/css/alertify.min.css",
+               "node_modules/alertifyjs/build/css/themes/semantic.min.css",
+               "node_modules/ngx-toastr/toastr.css",
+               "node_modules/ngx-spinner/animations/ball-scale-multiple.css",
+               "node_modules/ngx-spinner/animations/ball-atom.css",
+               "node_modules/ngx-spinner/animations/ball-spin-clockwise.css"
+
+
             ],
-            "scripts": []
+           "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+              "node_modules/jquery/dist/jquery.min.js",
+                "node_modules/alertifyjs/build/alertify.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js"
+
+
+            ]
           },
           "configurations": {
             "production": {
@@ -99,6 +120,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
